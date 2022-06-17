@@ -169,7 +169,9 @@ section {
     padding-bottom: 32px;
 
     color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .header-link:hover, 
 .header-link:focus, 
@@ -184,6 +186,7 @@ section {
     width: 16px;
     height: 16px;
     margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item-link:hover .header-contact-icon{
@@ -211,6 +214,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item+.contact-item{
@@ -238,6 +242,8 @@ section {
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .btn-hero:hover {
@@ -323,8 +329,33 @@ section {
     display: flex; 
     justify-content: space-between;
 }
+.our-work-item{
+    display: flex;
+    position: relative;
+}
 
+.our-work-descr {
+    width: 100%;
+    height: 70px;
+    font-family: 'Roboto';
 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    
+    padding-top:  27px;
+    padding-bottom: 27px;
+}
 /*--------------------------- НАША КОМАНДА -------------------*/
 
 .team {
@@ -404,12 +435,16 @@ section {
     align-items: center; 
     justify-content: center;
     cursor: pointer;
-}
+    transition: backgorund-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 
 .team-soc-icon{
     fill: var(--icons-gray);
     background-color: var(--primary-white-color); 
+    transition: backgorund-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon:focus,
@@ -431,13 +466,11 @@ section {
 
 
 
-
 /* --------------------ПОСТОЯННІЕ КЛИЕНТІ ---------------------------*/
 .clients {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
 }
 
@@ -473,6 +506,8 @@ section {
     justify-content: center;
     align-items: center;
     margin-left: 30px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover,
@@ -495,11 +530,13 @@ section {
     align-items: center;
     justify-content:center ;
     fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover .clients-logo,
 .clients-item:focus .clients-logo {
-    fill: var(--accent-color);    
+    fill: var(--accent-color);   
 }
 
 
@@ -547,16 +584,19 @@ section {
 
 .footer-contact-adress {
     color:var(--primary-white-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-number {
     line-height:  1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-adress:active, .footer-contact-adress:focus, .footer-contact-adress:hover,
@@ -581,11 +621,6 @@ section {
 
 }
 
-.company-soc-item:hover,
-.company-soc-item:focus{
-    background-color: var(--accent-color);
-}
-
 .company-soc-item{
     width: 44px;
     height: 44px;
@@ -596,9 +631,16 @@ section {
 
     border-radius: 50%;
     margin-left: 10px;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-soc-item:first-child{
     margin-left: 0;
+}
+
+
+.company-soc-item:hover,
+.company-soc-item:focus{
+    background-color: var(--accent-color);
 }
 
 .company-soc-icon{
@@ -624,6 +666,11 @@ section {
     border-radius: 4px;
     color: var(--title-text-color);
     background-color: var(--background-gray);  
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-filter-btn:hover, 
@@ -635,8 +682,6 @@ section {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    border-radius: 4px;
 }
 
 .current-btn {
@@ -658,7 +703,7 @@ section {
     background-color: var(--primary-white-color);
 
     margin-bottom: 30px;
-
+    transition: box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-examples-item:nth-child(3n){
@@ -714,3 +759,28 @@ section {
     color: var(--primary-text-color);
 
 }
+
+.backdrop-main-page{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-main-page.is-hidden{
+opacity: 0.5;
+pointer-events:none;
+}
+
+/* .modal-main-page {     */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    min-width:528px ;
+    min-height: 581px;
+    background-color: var(--primary-white-color)    ;
+} */

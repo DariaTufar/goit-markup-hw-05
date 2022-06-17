@@ -20,6 +20,7 @@
         <!-- <link rel="stylesheet" href="./css/symbol-defs.svg">------------------------------------------------- -->
 
         <link rel="stylesheet" href="./css/styles.css">
+        <!-- <link rel="stylesheet" href="./modal.js"> -->
     </head>
 
     <body>
@@ -64,7 +65,8 @@
             <section class="hero  ">
             <div class="container">    
                 <h1  class="hero-title" >Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="btn-hero btn" >Заказать услугу</button>
+                <button type="button" class="btn-hero btn "
+                data-modal-open>Заказать услугу</button>
             </div>
             </section>
             </div>
@@ -133,7 +135,8 @@
                         <img src="./images/work-box-1.jpg" class="our-work-image"
                         alt="чем мы занимаемся -фото компьютера"
                         width="370"
-                        height="294"/> 
+                        height="294"/>
+                        <div class="our-work-descr">Десктопные приложения</div>
                     </li>
 
                     <li class="our-work-item">
@@ -141,7 +144,10 @@
                         class="our-work-image" 
                         alt="чем мы занимаемся - фото компьютера2"
                         width="370"
-                        height="294"/>  
+                        height="294"/>
+                        
+                        <div class="our-work-descr">Мобильные приложения</div>
+
                     </li>
 
                     <li class="our-work-item">
@@ -150,6 +156,7 @@
                         alt="чем мы занимаемся - фото компьютера3"
                         width="370" 
                         height="294" />
+                        <div class="our-work-descr">Дизайнерские приложения</div>
                     </li>
                 </ul>
                 </div>
@@ -442,5 +449,15 @@
             </div>
             </div>
             </footer>
+        
+    
+<!-- <p class="backdrop-main-page " data-modal> -->
+    <!-- <div class="modal-main-page"> -->
+        <!-- <button data-modal-close>close modal</button> -->
+    <!-- </div> -->
+<!-- </p>
+
+<script src="./js/modal.js"></script> -->
+
     </body>
 </html>
